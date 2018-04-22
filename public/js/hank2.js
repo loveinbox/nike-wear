@@ -2,7 +2,7 @@ var screenHeight = document.body.clientHeight
 var screenWidth = document.body.clientWidth
 
 $('section:not(.cover)').css({
-  // top: screenHeight,
+  top: screenHeight,
   width: screenWidth,
   height: screenHeight
 })

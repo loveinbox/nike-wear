@@ -110,6 +110,7 @@
 }
 
 /*step-4*/
+/*step-5*/
 .color-pick-wrap{
   display: flex;
   justify-content: space-between;
@@ -135,8 +136,9 @@
 .color-pick-wrap .--selected{
   border: solid 2px white;
 }
-/*step-5*/
-.final{
+
+/*step-6*/
+.final, .final-back{
   display: flex;
   position: relative;
   height: 1050px;
@@ -155,15 +157,6 @@
 .final.--red{
   background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/final-red.png);
 }
-.final.--black-back{
-  background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/final-black-back.png);
-}
-.final.--white-back{
-  background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/final-white-back.png);
-}
-.final.--red-back{
-  background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/final-red-back.png);
-}
 .final .nike-logo{
   margin: 280px 0 0 150px;
   height: 50px;
@@ -174,9 +167,42 @@
   height: 120px;
   width: 230px;
 }
-.final .logo-mask{
-  height: 50px;
-  width: 200px;
-}
-/*step-6*/
+
 /*step-7*/
+.final-back{
+  display: block;
+  overflow: hidden;
+}
+.final-back img{
+  width: auto;
+}
+.final-back.--black{
+  background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/final-black-back.png);
+}
+.final-back.--white{
+  background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/final-white-back.png);
+}
+.final-back.--red{
+  background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/final-red-back.png);
+}
+.text-wrap{
+  margin-top: 180px;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  justify-content: center;
+}
+.text-wrap img{
+  width: 45px;
+}
+.number-wrap{
+  display: flex;
+  height: 300px;
+  width: 100%;
+  justify-content: center;
+}
+.number-wrap img{
+  margin: 0 10px;
+}
+
+
