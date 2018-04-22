@@ -1,0 +1,115 @@
+.info-wrap{
+  margin-top: 150px;
+  text-align: center;
+}
+
+.info-wrap .info-1{
+  width: 50%;
+}
+
+.info-wrap .info-2{
+  width: 65%;
+  margin-top: 25px;
+}
+
+.info-wrap .info-3{
+  width: 35%;
+  margin-top: 40px;
+}
+
+.input-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  margin: 120px auto;
+  width: 70%;
+  height: 50%;
+  text-align: center;
+}
+
+.input-wrap input{
+  display: block;
+  width: 100%;
+  height: 80px;
+  background: transparent;
+  border: solid 1px white;
+  color: white;
+  font-size: 45px;
+  text-align: center;
+}
+
+.input-wrap input.optional{
+  border: solid 1px transparent;
+}
+
+.input-wrap input.optional:focus{
+  border: solid 1px white;
+}
+
+.step-wrap{
+  margin-top: 150px;
+  text-align: center;
+  height: 12%;
+}
+
+.step-wrap img{
+  height: 100%;
+}
+
+/*.step-1*/
+.step-1 .input-wrap{
+  margin: 60px auto;
+}
+.step-1 .img-wrap{
+  padding: 15px;
+  width: 240px;
+  margin: 20px auto;
+  text-align: center;
+  border: solid 1px #666;
+}
+.step-1 .img-wrap.--selected{
+  border: solid 2px white;
+}
+
+/*step-2*/
+.step-2 .option-wrap{
+  margin: 10px auto; 
+  height: 75px;
+  width: 80%;
+  color: white;
+  line-height: 75px;
+  border: solid 1px #666;
+  font-size: 50px
+}
+.step-2 .option-wrap.--selected{
+  border: solid 2px white;
+  color: red;
+  font-weight: bold;
+}
+
+/*step-3*/
+.step-3 .input-wrap{
+  display: block;
+  width: 90%;
+  margin-top: 100px;
+}
+.step-3 .option-wrap{
+  box-sizing: border-box;
+  float: left;
+  padding: 0 15px;
+  margin-top: 10px;
+  width: 25%;
+}
+.step-3 .option-wrap img{
+  padding: 10px 5px;
+  height: 160px;
+  border: solid 2px #666;
+}
+.step-3 .option-wrap img.--selected{
+  border: solid 2px white;
+}
+
+/*step-4*/
+/*step-5*/
+/*step-6*/
+/*step-7*/

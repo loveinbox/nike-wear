@@ -48,7 +48,7 @@ img{
   position: absolute;
   left: 50%;
   bottom: 100px;
-  width: 260px;
+  width: 200px;
   transform: translateX(-50%);
 }
 
@@ -57,12 +57,12 @@ img{
   justify-content: space-between;
   position: absolute;
   left: 50%;
-  bottom: 100px;
-  width: 600px;
+  bottom: 150px;
+  width: 480px;
   transform: translateX(-50%);
 }
 
 .button-group img {
   display: inline-block;
-  width: 260px;
+  width: 200px;
 }

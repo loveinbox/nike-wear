@@ -22,7 +22,7 @@ setTimeout(function () {
 }, 500)
 
 $('.cover').click(function () {
-  $('.info').next().animate({ top: 0 });
+  $('.info').animate({ top: 0 });
 })
 
 $('.js-confirm').click(function () {
