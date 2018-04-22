@@ -6,8 +6,63 @@ html,body{
 }
 
 section{
+  display: none;
+  position: absolute;
 	width: 100%;
 }
+
+section.cover{
+  display: block;
+  z-index: 10;
+}
+
 img{
 	width: 100%;
+}
+
+.bg-1{
+  background-size: contain;
+  background-position:center;
+  background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/bg-1.jpg);
+}
+
+.bg-2{
+  background-size: contain;
+  background-position:center;
+  background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/bg-2.jpg);
+}
+
+.bg-3{
+  background-size: contain;
+  background-position:center;
+  background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/bg-3.jpg);
+}
+
+.bg-4{
+  background-size: contain;
+  background-position:center;
+  background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/bg-4.jpg);
+}
+
+.confirm{
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  width: 260px;
+  transform: translateX(-50%);
+}
+
+.button-group{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  width: 600px;
+  transform: translateX(-50%);
+}
+
+.button-group img {
+  display: inline-block;
+  width: 260px;
 }
