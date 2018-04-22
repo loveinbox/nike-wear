@@ -2,7 +2,7 @@ var screenHeight = document.body.clientHeight
 var screenWidth = document.body.clientWidth
 
 $('section:not(.cover)').css({
-  top: screenHeight,
+  // top: screenHeight,
   width: screenWidth,
   height: screenHeight
 })
@@ -23,7 +23,7 @@ setTimeout(function () {
 
 setTimeout(function () {
   var domString = ''
-  for (var i = 0; i <= 20; i++) {
+  for (var i = 2; i <= 20; i++) {
     domString += '<div class="option-wrap"><img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/logo-' + i + '.svg"></div>'
   }
   $('.step-3 .input-wrap').append(domString)
