@@ -1,14 +1,19 @@
 html,body{
-	width: 100%;
 	height: 100%;
 	margin: 0;
 	padding: 0;
+  overflow: hidden;
+  position: relative;
 }
 
 section{
   display: none;
   position: absolute;
+  top: 0;
 	width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 800ms;
 }
 
 section.cover{
@@ -17,31 +22,19 @@ section.cover{
 }
 
 img{
+  height: 100%;
 	width: 100%;
 }
 
-.bg-1{
-  background-size: contain;
-  background-position:center;
-  background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/bg-1.jpg);
+input{
+  margin: 0;
+  padding: 0;
 }
 
-.bg-2{
-  background-size: contain;
+.bg{
+  background-size: cover;
   background-position:center;
   background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/bg-2.jpg);
-}
-
-.bg-3{
-  background-size: contain;
-  background-position:center;
-  background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/bg-3.jpg);
-}
-
-.bg-4{
-  background-size: contain;
-  background-position:center;
-  background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/bg-4.jpg);
 }
 
 .confirm{
@@ -49,6 +42,7 @@ img{
   left: 50%;
   bottom: 100px;
   width: 200px;
+  height: auto;
   transform: translateX(-50%);
 }
 
