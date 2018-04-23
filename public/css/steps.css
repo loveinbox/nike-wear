@@ -143,20 +143,28 @@
 .color-pick-wrap .--white{
   background: white;
 }
+.color-pick-wrap .--black{
+  background: #000000;
+}
+.color-pick-wrap .--red{
+  background: red;
+}
 .color-pick-wrap .--selected{
   border: solid 2px white;
 }
 .show-pic-wrap{
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 600px;
 }
 .show-pic-wrap img{
+  height: 100px;
   width: 170px;
   padding: 10px;
 }
 .step-5 .show-pic-wrap img{
-  width: 90px;
+  width: auto;
 }
 
 /*step-6*/

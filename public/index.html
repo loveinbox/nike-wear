@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <section class="cover">
+    <!-- <section class="cover">
         <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/00-cover.jpg">
     </section>
     <section class="info bg">
@@ -31,14 +31,14 @@
         <div class="step-wrap">
             <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/step-1.svg">
         </div>
-        <div class="input-wrap">
-            <div class="img-wrap --selected">
+        <div class="input-wrap js-color-pick">
+            <div class="img-wrap --selected" data-value="red">
                 <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/color-red.png">
             </div>
-            <div class="img-wrap">
+            <div class="img-wrap" data-value="white">
                 <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/color-white.png">
             </div>
-            <div class="img-wrap">
+            <div class="img-wrap" data-value="black">
                 <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/color-black.png">
             </div>
         </div>
@@ -48,12 +48,12 @@
         <div class="step-wrap">
             <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/step-2.svg">
         </div>
-        <div class="input-wrap">
-            <div class="option-wrap">S</div>
-            <div class="option-wrap">M</div>
-            <div class="option-wrap --selected">L</div>
-            <div class="option-wrap">XL</div>
-            <div class="option-wrap">XLL</div>
+        <div class="input-wrap js-size-pick">
+            <div class="option-wrap" data-value="S">S</div>
+            <div class="option-wrap" data-value="M">M</div>
+            <div class="option-wrap --selected" data-value="L">L</div>
+            <div class="option-wrap" data-value="XL">XL</div>
+            <div class="option-wrap" data-value="XLL">XLL</div>
         </div>
         <img class="confirm js-confirm" src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/confirm.svg">
     </section>
@@ -61,8 +61,8 @@
         <div class="step-wrap">
             <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/step-3.svg">
         </div>
-        <div class="input-wrap">
-            <div class="option-wrap"><img class="--selected" src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/logo-1.svg"></div>
+        <div class="input-wrap js-logo-pick">
+            <div class="option-wrap" data-value="logo-1"><img class="--selected" src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/logo-1.svg"></div>
         </div>
         <img class="confirm js-confirm" src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/confirm.svg">
     </section>
@@ -72,50 +72,50 @@
         </div>
         <div class="input-wrap">
             <div class="input-tag-wrap">
-                <input type="number" placeholder="输入数字">
+                <input id="input-number" type="number" placeholder="输入数字">
             </div>
-            <div class="show-pic-wrap">
-                <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/number-white/number-0.svg">
-                <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/number-white/number-0.svg">
-                <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/number-white/number-0.svg">
+            <div class="show-pic-wrap js-input-number-show">
+                <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/number-yellow/number-0.svg">
+                <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/number-yellow/number-0.svg">
+                <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/number-yellow/number-0.svg">
             </div>
-            <div class="color-pick-wrap">
+            <div class="color-pick-wrap js-color-pick-wrap js-pick-number-color">
                 <div class="--selected">
-                    <div class="--yellow"></div> 
+                    <div class="--yellow js-color-1" data-color="yellow"></div> 
                 </div>
                 <div>
-                    <div class="--white"></div> 
+                    <div class="--white js-color-2" data-color="white"></div> 
                 </div>
             </div>
         </div>
     	<img class="confirm js-confirm" src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/confirm.svg">
-    </section> 
+    </section> --> 
     <section class="step-5 bg">
         <div class="step-wrap">
             <img class="info-1" src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/step-5.svg">
         </div>
         <div class="input-wrap">
             <div class="input-tag-wrap">
-                <input type="number" placeholder="输入字母">
+                <input id="input-letter" type="text" placeholder="输入字母">
             </div>
-            <div class="show-pic-wrap">
+            <div class="show-pic-wrap js-input-letter-show">
                 <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/letter-white/letter-1.svg">
                 <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/letter-white/letter-1.svg">
                 <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/letter-white/letter-1.svg">
                 <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/letter-white/letter-1.svg">
             </div>
-            <div class="color-pick-wrap">
+            <div class="color-pick-wrap js-color-pick-wrap js-pick-letter-color">
                 <div class="--selected">
-                    <div class="--yellow"></div> 
+                    <div class="--yellow js-color-1" data-color="yellow"></div> 
                 </div>
                 <div>
-                    <div class="--white"></div> 
+                    <div class="--white js-color-2" data-color="white"></div> 
                 </div>
             </div>
         </div>
         <img class="confirm js-confirm" src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/confirm.svg">
     </section>
-    <section class="step-6 bg">
+    <!-- <section class="step-6 bg">
         <div class="step-wrap">
             <img class="info-1" src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/step-6.svg">
         </div>
@@ -154,7 +154,7 @@
         </div>
     </section>
     <section class="end">
-    </section> 
+    </section>  -->
     <div style="visibility: hidden;">
         <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/confirm-selected.svg">
         <img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/reset-selected.svg">
