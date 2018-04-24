@@ -30,3 +30,35 @@ letterColor	yellow
 logo	logo-2
 
 
+
+Tue Apr 24 2018 22:59:44 GMT+0800 (CST)
+company	
+name	
+mobile	
+email	
+inviter	
+color	red
+size	L
+number	12
+numberColor	yellow
+letter	sdf
+letterColor	yellow
+logo	logo-14
+
+
+
+Tue Apr 24 2018 23:21:21 GMT+0800 (CST)
+company	
+name	
+mobile	
+email	
+inviter	
+color	red
+size	XL
+number	88
+numberColor	yellow
+letter	hhgf
+letterColor	yellow
+logo	logo-14
+
+
