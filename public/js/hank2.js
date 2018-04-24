@@ -4,17 +4,17 @@ var output = {
   mobile: '',
   email: '',
   inviter: '',
-  color: '',
-  size: '',
-  number: '000',
+  color: 'red',
+  size: 'L',
+  number: '',
   numberColor: 'yellow',
-  letter: 'aaaa',
+  letter: '',
   letterColor: 'yellow',
   logo: ''
 }
 
-var inputNumbers = '000'
-var inputLetters = 'aaaa'
+var inputNumbers = ''
+var inputLetters = ''
 
 setTimeout(function () {
   $('section.cover').css({
@@ -48,6 +48,14 @@ $('.cover').click(function () {
   $('.info').addClass('--show')
 })
 
+$('.js-info-done').click(function () {
+  output.company = $('.js-company').val()
+  output.name = $('.js-name').val()
+  output.mobile = $('.js-mobile').val()
+  output.email = $('.js-email').val()
+  output.inviter = $('.js-inviter').val()
+})
+
 $('.js-confirm').click(function () {
   var currentButton = $(this)
   currentButton.attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/confirm-selected.svg')
@@ -69,11 +77,16 @@ $('.js-reset').click(function (){
 
 function changeSelected() {
   $(this).parents('section').find('.--selected').removeClass('--selected')
-  $(this).addClass('--selected')
+  $(this).closest('.option-wrap').addClass('--selected')
 }
 
-$('.step-1 .img-wrap').click(changeSelected)
-$('.step-2 .option-wrap').click(changeSelected)
+$('.option-wrap').click(changeSelected)
+
+function changePrintColor(color) {
+  // swtich (color) {
+
+  // }
+}
 
 // actions
 // 选取颜色
@@ -99,6 +112,7 @@ $('.js-color-pick .img-wrap').click(function () {
       .attr('data-color', 'yellow')
     output.numberColor = 'white'
     output.letterColor = 'white'
+    changePrintColor('white')
   }
   if (output.color === 'white') {
     $('.js-color-pick-wrap .js-color-1')
@@ -119,6 +133,7 @@ $('.js-color-pick .img-wrap').click(function () {
       .attr('data-color', 'red')
     output.numberColor = 'black'
     output.letterColor = 'black'
+    changePrintColor('black')
   }
   if (output.color === 'black') {
     $('.js-color-pick-wrap .js-color-1')
@@ -139,6 +154,7 @@ $('.js-color-pick .img-wrap').click(function () {
       .attr('data-color', 'yellow')
     output.numberColor = 'white'
     output.letterColor = 'white'
+    changePrintColor('white')
   }
 
   // 更换Tee的颜色
@@ -162,6 +178,8 @@ $('.js-size-pick .option-wrap').click(function () {
 // 输入数字出图
 function printNumbers() {
   var imgs = ''
+
+  output.number = inputNumbers
   inputNumbers.split('').forEach(function (item) {
     imgs += '<img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/number-'
     + output.numberColor
@@ -196,6 +214,8 @@ $('.js-pick-number-color>div').click(function() {
 // 输入字母出图
 function printLetters() {
   var imgs = ''
+
+  output.letter = inputLetters
   inputLetters.split('').forEach(function (item) {
     imgs += '<img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/letter-'
     + output.letterColor

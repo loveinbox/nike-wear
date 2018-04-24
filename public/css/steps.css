@@ -15,7 +15,7 @@
 
 .input-wrap{
   margin: 10px auto 0;
-  width: 70%;
+  width: 75%;
   border: solid 1px transparent;
 }
 
@@ -56,14 +56,14 @@
 .step-1 .input-wrap{
   margin: 5px auto 0;
 }
-.step-1 .img-wrap{
+.step-1 .option-wrap{
   padding: 15px;
   width: 70px;
   margin: 10px auto;
   text-align: center;
   border: solid 1px #333;
 }
-.step-1 .img-wrap.--selected{
+.step-1 .option-wrap.--selected{
   border: solid 1px white;
 }
 
@@ -128,6 +128,7 @@
   justify-content: space-between;
   margin: 0 auto 30px;
   padding: 0 30px;
+  width: 170px;
 }
 .color-pick-wrap>div{
   padding: 5px;
@@ -155,6 +156,7 @@
   border: solid 1px white;
 }
 .step-4 .show-pic-wrap{
+  height: 145px;
   margin: 55px 0;
   text-align: center;
 }
@@ -165,13 +167,14 @@
   padding: 10px;
 }
 .step-5 .show-pic-wrap{
+  height: 145px;
   margin: 75px 0;
   text-align: center;
 }
 .step-5 .show-pic-wrap img{
   width: auto;
   height: 60px;
-  padding: 10px 2px;
+  padding: 10px 4px;
 }
 
 /*step-6*/
