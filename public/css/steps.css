@@ -27,7 +27,7 @@
 }
 
 .input-wrap{
-  margin: 120px auto 30px;
+  margin: 120px auto 60px;
   width: 650px;
   border: solid 2px transparent;
 }
@@ -161,7 +161,12 @@
   align-items: center;
   height: 600px;
 }
-.show-pic-wrap img{
+.step-4 .show-pic-wrap img{
+  height: 300px;
+  width: 170px;
+  padding: 10px;
+}
+.step-5 .show-pic-wrap img{
   height: 100px;
   width: 170px;
   padding: 10px;

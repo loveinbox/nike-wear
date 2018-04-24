@@ -165,7 +165,7 @@ function printLetters() {
     imgs += '<img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/letter-'
     + output.letterColor
     + '/letter-'
-    + (item.charCodeAt(0) - 96)
+    + (item.toLowerCase().charCodeAt(0) - 96)
     + '.svg">'
   })
   $('.js-input-letter-show').empty().append(imgs)
@@ -174,7 +174,11 @@ function printLetters() {
 $('#input-letter').on('input', function(event) {
   var inputValue = $(this).val()
 
-  if ($(this).val().length > 8) {
+  // 过滤非字符和点
+  $(this).val(inputValue.match(/[a-z]*\.*[a-z]*/))
+
+  // 限制长度
+  if (inputValue.length > 8) {
     $(this).val(inputValue.slice(0, 8))
   }
 
