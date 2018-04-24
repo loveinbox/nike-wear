@@ -8,27 +8,15 @@
   height: auto;
 }
 
-.info-wrap .info-1{
-  width: 200px;
-  margin: 0 auto;
-  padding-left: 30px;
-}
-
-.info-wrap .info-2{
-  width: 230px;
-  margin: 15px auto;
-  padding-left: 15px;
-}
-
-.info-wrap .info-3{
-  width: 150px;
-  margin: 20px auto;
+.info-wrap .info{
+    width: 270px;
+    margin: 0 auto;
 }
 
 .input-wrap{
   margin: 10px auto 0;
   width: 70%;
-  border: solid 2px transparent;
+  border: solid 1px transparent;
 }
 
 .input-wrap input{
@@ -44,14 +32,6 @@
 
 .input-wrap input + input{
   margin-top: 20px;
-}
-
-.input-wrap input.optional{
-  border: solid 1px transparent;
-}
-
-.input-wrap input.optional:focus{
-  border: solid 1px white;
 }
 
 .step-wrap{
@@ -70,6 +50,9 @@
 }
 
 /*.step-1*/
+.step-1 img{
+  width: 100%;
+}
 .step-1 .input-wrap{
   margin: 5px auto 0;
 }
@@ -78,10 +61,10 @@
   width: 70px;
   margin: 10px auto;
   text-align: center;
-  border: solid 2px #333;
+  border: solid 1px #333;
 }
 .step-1 .img-wrap.--selected{
-  border: solid 2px white;
+  border: solid 1px white;
 }
 
 /*step-2*/
@@ -94,7 +77,7 @@
   width: 100%;
   color: white;
   line-height: 50px;
-  border: solid 2px #666;
+  border: solid 1px #666;
   font-size: 24px;
   text-align: center;
 }
@@ -102,7 +85,7 @@
   margin-top: 10px;
 }
 .step-2 .option-wrap.--selected{
-  border: solid 2px white;
+  border: solid 1px white;
   color: red;
   font-weight: bold;
 }
@@ -110,23 +93,32 @@
 /*step-3*/
 .step-3 .input-wrap{
   display: block;
-  width: 90%;
+  width: 300px;
   margin-top: 10px;
 }
 .step-3 .option-wrap{
   box-sizing: border-box;
   float: left;
-  padding: 0 5px;
+  padding: 0 2px;
   margin-top: 2px;
-  width: 25%;
+  height: 70px;
+  width: 70px;
+  padding: 5px;
 }
 .step-3 .option-wrap img{
-  padding: 5px 0;
-  height: 55px;
-  border: solid 2px #666;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
 }
-.step-3 .option-wrap img.--selected{
-  border: solid 2px white;
+.step-3 .option-wrap{
+  border: solid 1px #666;
+}
+.step-3 .option-wrap.--selected{
+  border: solid 1px white;
+}
+
+.step-3 .option-wrap{
+  margin-left: 5px;
 }
 
 /*step-4*/
@@ -138,7 +130,7 @@
   padding: 0 30px;
 }
 .color-pick-wrap>div{
-  padding: 15px;
+  padding: 5px;
   width: 60px;
   height: 60px;
   border: solid 1px #666;
@@ -160,7 +152,7 @@
   background: red;
 }
 .color-pick-wrap .--selected{
-  border: solid 2px white;
+  border: solid 1px white;
 }
 .step-4 .show-pic-wrap{
   margin: 55px 0;
@@ -169,17 +161,17 @@
 .step-4 .show-pic-wrap img{
   display: inline-block;
   width: auto;
-  height: 100px;
+  height: 120px;
   padding: 10px;
 }
 .step-5 .show-pic-wrap{
-  margin: 55px 0;
+  margin: 75px 0;
   text-align: center;
 }
 .step-5 .show-pic-wrap img{
   width: auto;
   height: 60px;
-  padding: 10px 1px;
+  padding: 10px 2px;
 }
 
 /*step-6*/

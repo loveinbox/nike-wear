@@ -20,6 +20,11 @@ setTimeout(function () {
   $('section.cover').css({
     'z-index': 0
   })
+  $('.cover').append(
+        '<img class="text" src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/cover-end/text.svg">'
+        + '<img class="logo" src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/cover-end/logo.svg">'
+        + '<img class="moving-arrow" src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/arrow.svg">'
+        )
 }, 1000)
 
 setTimeout(function () {
@@ -37,8 +42,6 @@ setTimeout(function () {
     output.logo = $(this).attr('data-value')
     $('.js-team-logo').attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/logo-no-text/' + output.logo + '.svg')
   })
-
-  $('.end').append('<img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/00-end.jpg">')
 }, 5000)
 
 $('.cover').click(function () {
