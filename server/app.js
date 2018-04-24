@@ -35,22 +35,6 @@ app.get('/', function(req, res, next) {
     var fileName = 'index.html';
     var host = req.get('host');
     var firstDomainName = host.split('.')[0];
-    // if(firstDomainName === 'tw'){
-    //     fileName = 'tw.html';
-    // }
-    // if(firstDomainName === 'hk'){
-    //     fileName = 'hk.html';
-    // }
-    // if(firstDomainName === 'invitation'){
-    //     fileName = 'invitation.html';
-    // }
-    // if(firstDomainName === 'invitation-w'){
-    //     fileName = 'invitation-w.html';
-    // }
-    // if(firstDomainName === 'chart'){
-    //     fileName = 'S01/index.html';
-    // }
-
     console.log('fileName', fileName);
     res.sendFile(fileName, options, function(err) {
         if (err) {
@@ -88,7 +72,7 @@ app.all('/write', jsonParser, function(req, res, next) {
     console.log(req.body);
     var message = '';
     for(var name in req.body){
-        message += req.body[name] + '\n';
+        message += name + '\t' + req.body[name] + '\n';
     }
     message = '\n' + new Date() + '\n' + message + '\n\n';
     console.log('message', message);

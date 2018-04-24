@@ -251,3 +251,13 @@ $('.js-pick-letter-color>div').click(function() {
   printLetters()
 });
 
+$('.js-complete').click(function () {
+  $.ajax({
+      url: '/write', 
+      type: 'POST', 
+      contentType: 'application/json', 
+      data: JSON.stringify(output)}
+  ).success(function () {
+  });
+})
+
