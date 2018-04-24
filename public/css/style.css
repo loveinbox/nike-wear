@@ -6,19 +6,33 @@ html,body{
   position: relative;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
 section{
-  display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
 	width: 100%;
   height: 100%;
   overflow: hidden;
-  transition: all 800ms;
+  transform: translate3d(0, 2000px, 0);
+  transition: transform 888ms ease;
 }
 
 section.cover{
   display: block;
   z-index: 10;
+  transform: translate3d(0, 0, 0);
+}
+
+section.--show{
+  transform: translate3d(0, 0, 0);
 }
 
 img{
@@ -40,7 +54,6 @@ input{
 .confirm{
   position: absolute;
   left: 50%;
-  bottom: 100px;
   width: 200px;
   height: auto;
   transform: translateX(-50%);
@@ -51,7 +64,6 @@ input{
   justify-content: space-between;
   position: absolute;
   left: 50%;
-  bottom: 150px;
   width: 480px;
   transform: translateX(-50%);
 }
@@ -60,3 +72,4 @@ input{
   display: inline-block;
   width: 200px;
 }
+

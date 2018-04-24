@@ -1,5 +1,3 @@
-var screenHeight = document.body.clientHeight
-var screenWidth = document.body.clientWidth
 var output = {
   company: '',
   name: '',
@@ -18,17 +16,7 @@ var output = {
 var inputNumbers = '000'
 var inputLetters = 'AAA'
 
-$('section:not(.cover)').css({
-  // transform: 'translateY(' + screenHeight + 'px)'
-})
-
-$('section.cover').css({
-  transform: 'translateY(' + 0 + ')'
-})
-
 setTimeout(function () {
-  $('section').css({display: 'block'})
-
   $('section.cover').css({
     'z-index': 0
   })
@@ -49,12 +37,12 @@ setTimeout(function () {
 }, 5000)
 
 $('.cover').click(function () {
-  $('.info').css({ transform: 'translateY(' + 0 + ')' });
+  $('.info').addClass('--show')
 })
 
 $('.js-confirm').click(function () {
   $(this).attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/confirm-selected.svg')
-  $(this).parents('section').next().css({ transform: 'translateY(' + 0 + ')' });
+  $(this).closest('section').next().addClass('--show')
 })
 
 function changeSelected() {
