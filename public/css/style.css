@@ -55,7 +55,7 @@ input{
   position: absolute;
   left: 50%;
   width: 200px;
-  height: auto;
+  height: 70px;
   transform: translateX(-50%);
 }
 
@@ -70,6 +70,7 @@ input{
 
 .button-group img {
   display: inline-block;
+  height: 70px;
   width: 200px;
 }
 

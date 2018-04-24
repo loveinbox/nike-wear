@@ -201,8 +201,8 @@
   width: 200px;
 }
 .final .logo{
-  margin-top: 250px;
-  height: 120px;
+  margin-top: 265px;
+  height: 145px;
   width: 230px;
 }
 
@@ -210,9 +210,6 @@
 .final-back{
   display: block;
   overflow: hidden;
-}
-.final-back img{
-  width: 90px;
 }
 .final-back.--black{
   background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/final-black-back.png);
@@ -231,7 +228,9 @@
   justify-content: center;
 }
 .text-wrap img{
-  width: 45px;
+  width: auto;
+  height: 75px;
+  margin: 0 5px;
 }
 .number-wrap{
   display: flex;
@@ -240,7 +239,9 @@
   justify-content: center;
 }
 .number-wrap img{
-  margin: 0 10px;
+  width: auto;
+  height: 180px;
+  margin: 50px 10px;
 }
 
 

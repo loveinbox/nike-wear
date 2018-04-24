@@ -31,6 +31,7 @@ setTimeout(function () {
   $('.step-3 .option-wrap img').click(changeSelected)
   $('.js-logo-pick .option-wrap').click(function () {
     output.logo = $(this).attr('data-value')
+    $('.js-team-logo').attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/logo-no-text/' + output.logo + '.svg')
   })
 
   $('.end').append('<img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/00-end.jpg">')
@@ -136,6 +137,7 @@ function printNumbers() {
     + '.svg">'
   })
   $('.js-input-number-show').empty().append(imgs)
+  $('.js-final-back .number-wrap').empty().append(imgs)
 }
 
 $('#input-number').on('input', function() {
@@ -169,6 +171,7 @@ function printLetters() {
     + '.svg">'
   })
   $('.js-input-letter-show').empty().append(imgs)
+  $('.js-final-back .text-wrap').empty().append(imgs)
 }
 
 $('#input-letter').on('input', function(event) {
