@@ -8,13 +8,13 @@ var output = {
   size: '',
   number: '000',
   numberColor: 'yellow',
-  letter: 'AAA',
+  letter: 'aaaa',
   letterColor: 'yellow',
   logo: ''
 }
 
 var inputNumbers = '000'
-var inputLetters = 'AAA'
+var inputLetters = 'aaaa'
 
 setTimeout(function () {
   $('section.cover').css({
@@ -137,6 +137,18 @@ $('.js-color-pick .img-wrap').click(function () {
     output.numberColor = 'white'
     output.letterColor = 'white'
   }
+
+  // 更换Tee的颜色
+  $('.final-back')
+      .removeClass('--white')
+      .removeClass('--black')
+      .removeClass('--red')
+      .addClass('--' + output.color)
+  $('.final')
+      .removeClass('--white')
+      .removeClass('--black')
+      .removeClass('--red')
+      .addClass('--' + output.color)
 })
 
 // 选取尺码
@@ -185,7 +197,7 @@ function printLetters() {
     imgs += '<img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/letter-'
     + output.letterColor
     + '/letter-'
-    + (item.toLowerCase().charCodeAt(0) - 96)
+    + (item.charCodeAt(0) - 96)
     + '.svg">'
   })
   $('.js-input-letter-show').empty().append(imgs)
@@ -193,7 +205,7 @@ function printLetters() {
 }
 
 $('#input-letter').on('input', function(event) {
-  var inputValue = $(this).val()
+  var inputValue = $(this).val().toLowerCase()
 
   // 过滤非字符和点
   $(this).val(inputValue.match(/[a-z]*\.*[a-z]*/))

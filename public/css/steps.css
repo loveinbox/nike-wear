@@ -1,6 +1,5 @@
 .info-wrap{
-  height: 200px;
-  margin-top: 60px;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -10,41 +9,41 @@
 }
 
 .info-wrap .info-1{
-  width: 500px;
+  width: 200px;
   margin: 0 auto;
-  padding-left: 60px;
+  padding-left: 30px;
 }
 
 .info-wrap .info-2{
-  width: 650px;
-  margin: 25px auto;
-  padding-left: 80px;
+  width: 230px;
+  margin: 15px auto;
+  padding-left: 15px;
 }
 
 .info-wrap .info-3{
-  width: 350px;
-  margin: 40px auto;
+  width: 150px;
+  margin: 20px auto;
 }
 
 .input-wrap{
-  margin: 120px auto 60px;
-  width: 650px;
+  margin: 10px auto 0;
+  width: 70%;
   border: solid 2px transparent;
 }
 
 .input-wrap input{
   display: block;
   width: 100%;
-  height: 90px;
+  height: 40px;
   background: transparent;
   border: solid 1px white;
   color: white;
-  font-size: 45px;
+  font-size: 22px;
   text-align: center;
 }
 
 .input-wrap input + input{
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .input-wrap input.optional{
@@ -56,43 +55,51 @@
 }
 
 .step-wrap{
-  margin-top: 60px;
+  margin-top: 30px;
   text-align: center;
-  height: 200px;
+  height: 80px;
 }
 
 .step-wrap img{
   height: 100%;
 }
 
+/*info*/
+.info .input-wrap{
+  margin: 30px auto;
+}
+
 /*.step-1*/
 .step-1 .input-wrap{
-  margin: 30px auto;
+  margin: 5px auto 0;
 }
 .step-1 .img-wrap{
   padding: 15px;
-  width: 240px;
+  width: 70px;
   margin: 10px auto;
   text-align: center;
-  border: solid 1px #666;
+  border: solid 2px #333;
 }
 .step-1 .img-wrap.--selected{
   border: solid 2px white;
 }
 
 /*step-2*/
+.step-2 .input-wrap{
+  margin: 10px auto;
+}
 .step-2 .option-wrap{
-  margin: 10px auto; 
-  height: 90px;
+  margin: 15px auto; 
+  height: 45px;
   width: 100%;
   color: white;
-  line-height: 90px;
-  border: solid 1px #666;
-  font-size: 50px;
+  line-height: 50px;
+  border: solid 2px #666;
+  font-size: 24px;
   text-align: center;
 }
 .step-2 .option-wrap + .option-wrap{
-  margin-top: 80px;
+  margin-top: 10px;
 }
 .step-2 .option-wrap.--selected{
   border: solid 2px white;
@@ -104,18 +111,18 @@
 .step-3 .input-wrap{
   display: block;
   width: 90%;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .step-3 .option-wrap{
   box-sizing: border-box;
   float: left;
-  padding: 0 15px;
-  margin-top: 10px;
+  padding: 0 5px;
+  margin-top: 2px;
   width: 25%;
 }
 .step-3 .option-wrap img{
-  padding: 10px 5px;
-  height: 160px;
+  padding: 5px 0;
+  height: 55px;
   border: solid 2px #666;
 }
 .step-3 .option-wrap img.--selected{
@@ -127,13 +134,13 @@
 .color-pick-wrap{
   display: flex;
   justify-content: space-between;
-  width: 540px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
+  padding: 0 30px;
 }
 .color-pick-wrap>div{
   padding: 15px;
-  width: 200px;
-  height: 200px;
+  width: 60px;
+  height: 60px;
   border: solid 1px #666;
 }
 .color-pick-wrap>div>div{
@@ -155,33 +162,33 @@
 .color-pick-wrap .--selected{
   border: solid 2px white;
 }
-.show-pic-wrap{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
+.step-4 .show-pic-wrap{
+  margin: 55px 0;
+  text-align: center;
 }
 .step-4 .show-pic-wrap img{
-  height: 300px;
-  width: 170px;
+  display: inline-block;
+  width: auto;
+  height: 100px;
   padding: 10px;
 }
-.step-5 .show-pic-wrap img{
-  height: 100px;
-  width: 170px;
-  padding: 10px;
+.step-5 .show-pic-wrap{
+  margin: 55px 0;
+  text-align: center;
 }
 .step-5 .show-pic-wrap img{
   width: auto;
+  height: 60px;
+  padding: 10px 1px;
 }
 
 /*step-6*/
 .final, .final-back{
   display: flex;
   position: relative;
-  height: 1050px;
-  width: 700px;
-  margin: 40px auto;
+  height: 360px;
+  width: 300px;
+  margin: 30px auto;
   background-size: contain;
   background-position:center;
   background-repeat: no-repeat;
@@ -200,15 +207,17 @@
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  margin: 280px 160px;
+  width: 100%;
+  margin: 70px;
 }
 .final .nike-logo{
-  height: 50px;
-  width: 200px;
+  width: auto;
+  height: 20px;
 }
 .final .logo{
-  height: 145px;
-  width: 230px;
+  padding-top: 30px;
+  height: 75px;
+  width: auto;
 }
 /*step-7*/
 .final-back{
@@ -225,16 +234,15 @@
   background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/final-red-back.png);
 }
 .text-wrap{
-  margin-top: 180px;
+  margin-top: 40px;
   display: flex;
-  height: 80px;
   width: 100%;
   justify-content: center;
 }
 .text-wrap img{
   width: auto;
-  height: 75px;
-  margin: 0 5px;
+  height: 45px;
+  margin: 0 1px;
 }
 .number-wrap{
   display: flex;
@@ -244,8 +252,8 @@
 }
 .number-wrap img{
   width: auto;
-  height: 180px;
-  margin: 50px 10px;
+  height: 80px;
+  margin: 10px 3px;
 }
 
 
