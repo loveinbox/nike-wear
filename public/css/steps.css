@@ -195,17 +195,21 @@
 .final.--red{
   background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/final-red.png);
 }
+.final .img-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin: 280px 160px;
+}
 .final .nike-logo{
-  margin: 280px 0 0 150px;
   height: 50px;
   width: 200px;
 }
 .final .logo{
-  margin-top: 265px;
   height: 145px;
   width: 230px;
 }
-
 /*step-7*/
 .final-back{
   display: block;

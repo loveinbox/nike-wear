@@ -25,7 +25,11 @@ setTimeout(function () {
 setTimeout(function () {
   var domString = ''
   for (var i = 2; i <= 20; i++) {
-    domString += '<div class="option-wrap" data-value="logo-' + i + '"><img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/logo-' + i + '.svg"></div>'
+    domString += '<div class="option-wrap" data-value="logo-' 
+      + i 
+      + '"><img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/logo-with-text/logo-' 
+      + i 
+      + '.svg"></div>'
   }
   $('.step-3 .input-wrap').append(domString)
   $('.step-3 .option-wrap img').click(changeSelected)
@@ -42,8 +46,22 @@ $('.cover').click(function () {
 })
 
 $('.js-confirm').click(function () {
-  $(this).attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/confirm-selected.svg')
-  $(this).closest('section').next().addClass('--show')
+  var currentButton = $(this)
+  currentButton.attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/confirm-selected.svg')
+  currentButton.closest('section').next().addClass('--show')
+
+  setTimeout(function () {
+    currentButton.attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/confirm.svg')
+  }, 1000)
+})
+$('.js-reset').click(function (){
+  var currentButton = $(this)
+
+  currentButton.attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/reset-selected.svg')
+  $('.js-resetable').removeClass('--show')
+  setTimeout(function () {
+    currentButton.attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/reset.svg')
+  }, 1000)
 })
 
 function changeSelected() {
