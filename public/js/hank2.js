@@ -29,7 +29,7 @@ setTimeout(function () {
 
 setTimeout(function () {
   var domString = ''
-  for (var i = 2; i <= 20; i++) {
+  for (var i = 1; i < 20; i++) {
     domString += '<div class="option-wrap" data-value="logo-' 
       + i 
       + '"><img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/logo-with-text/logo-' 
@@ -44,7 +44,7 @@ setTimeout(function () {
   })
 }, 5000)
 
-$('.cover').click(function () {
+$('.cover').on('touchmove', function () {
   $('.info').addClass('--show')
 })
 
