@@ -106,8 +106,8 @@ function printNumbers() {
 $('#input-number').on('input', function() {
   var inputValue = $(this).val()
 
-  if ($(this).val().length > 3) {
-    $(this).val(inputValue.slice(0, 3))
+  if ($(this).val().length > 2) {
+    $(this).val(inputValue.slice(0, 2))
   }
 
   inputNumbers = $(this).val()
