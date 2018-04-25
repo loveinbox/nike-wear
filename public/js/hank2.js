@@ -142,14 +142,14 @@ function printLetters() {
     + output.letterColor
     + '/letter-'
     + (item.charCodeAt(0) - 64)
-    + '.svg">'
+    + '.png">'
   })
   inputLetters.split('').forEach(function (item) {
     finalImgs += '<img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/letter-'
     + (output.letterColor === 'black' ? 'solid-black' : output.letterColor)
     + '/letter-'
     + (item.charCodeAt(0) - 64)
-    + '.svg">'
+    + '.png">'
   })
   $('.js-input-letter-show').empty().append(showImgs)
   $('.js-final-back .text-wrap').empty().append(finalImgs)

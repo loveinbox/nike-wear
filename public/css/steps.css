@@ -172,7 +172,7 @@
 }
 .step-5 .show-pic-wrap img{
   width: auto;
-  height: 60px;
+  height: 55px;
   padding: 10px 4px;
 }
 
@@ -202,11 +202,11 @@
   align-items: center;
   height: 60px;
   width: 100%;
-  margin: 70px 75px;
+  margin: 55px 75px;
 }
 .final .nike-logo{
   width: auto;
-  height: 20px;
+  height: 15px;
 }
 .final .logo{
   padding-top: 15px;
@@ -238,6 +238,14 @@
   width: auto;
   height: 20px;
   margin: 0 2px;
+}
+.text-wrap div{
+  width: 5px;
+  height: 20px;
+  margin: 0 2px;
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
 }
 .number-wrap{
   display: flex;
