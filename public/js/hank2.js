@@ -143,7 +143,7 @@ $('#input-letter').on('input', function(event) {
   var inputValue = $(this).val().toUpperCase()
 
   // 过滤非字符和点
-  $(this).val(inputValue.match(/[A-Z]*\.*[A-Z]*/)[0].toUpperCase())
+  $(this).val(inputValue.match(/[A-Z]*/)[0].toUpperCase())
 
   // 限制长度
   if (inputValue.length > 8) {
