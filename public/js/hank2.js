@@ -113,6 +113,7 @@ $('.js-color-pick .option-wrap').click(function () {
     output.numberColor = 'white'
     output.letterColor = 'white'
     changePrintColor('red')
+    $('.js-nike-logo').attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/nike-logo.svg')
   }
   if (output.color === 'white') {
     $('.js-color-pick-wrap .js-color-1')
@@ -134,6 +135,7 @@ $('.js-color-pick .option-wrap').click(function () {
     output.numberColor = 'black'
     output.letterColor = 'black'
     changePrintColor('white')
+    $('.js-nike-logo').attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/nike-logo-black.svg')
   }
   if (output.color === 'black') {
     $('.js-color-pick-wrap .js-color-1')
@@ -155,6 +157,7 @@ $('.js-color-pick .option-wrap').click(function () {
     output.numberColor = 'white'
     output.letterColor = 'white'
     changePrintColor('black')
+    $('.js-nike-logo').attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/nike-logo.svg')
   }
 
   // 更换Tee的颜色
