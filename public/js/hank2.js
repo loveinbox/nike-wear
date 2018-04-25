@@ -82,97 +82,6 @@ function changeSelected() {
 
 $('.option-wrap').click(changeSelected)
 
-function changePrintColor(color) {
-  // swtich (color) {
-
-  // }
-}
-
-// actions
-// 选取颜色
-$('.js-color-pick .option-wrap').click(function () {
-  output.color = $(this).attr('data-value')
-
-  if (output.color === 'red') {
-    $('.js-color-pick-wrap .js-color-1')
-      .removeClass('--yellow')
-      .removeClass('--white')
-      .removeClass('--black')
-      .removeClass('--red')
-    $('.js-color-pick-wrap .js-color-1')
-      .addClass('--white')
-      .attr('data-color', 'white')
-    $('.js-color-pick-wrap .js-color-2')
-      .removeClass('--yellow')
-      .removeClass('--white')
-      .removeClass('--black')
-      .removeClass('--red')
-    $('.js-color-pick-wrap .js-color-2')
-      .addClass('--yellow')
-      .attr('data-color', 'yellow')
-    output.numberColor = 'white'
-    output.letterColor = 'white'
-    changePrintColor('red')
-    $('.js-nike-logo').attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/nike-logo.svg')
-  }
-  if (output.color === 'white') {
-    $('.js-color-pick-wrap .js-color-1')
-      .removeClass('--yellow')
-      .removeClass('--white')
-      .removeClass('--black')
-      .removeClass('--red')
-    $('.js-color-pick-wrap .js-color-1')
-      .addClass('--black')
-      .attr('data-color', 'black')
-    $('.js-color-pick-wrap .js-color-2')
-      .removeClass('--yellow')
-      .removeClass('--white')
-      .removeClass('--black')
-      .removeClass('--red')
-    $('.js-color-pick-wrap .js-color-2')
-      .addClass('--red')
-      .attr('data-color', 'red')
-    output.numberColor = 'black'
-    output.letterColor = 'black'
-    changePrintColor('white')
-    $('.js-nike-logo').attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/nike-logo-black.svg')
-  }
-  if (output.color === 'black') {
-    $('.js-color-pick-wrap .js-color-1')
-      .removeClass('--yellow')
-      .removeClass('--white')
-      .removeClass('--black')
-      .removeClass('--red')
-    $('.js-color-pick-wrap .js-color-1')
-      .addClass('--white')
-      .attr('data-color', 'white')
-    $('.js-color-pick-wrap .js-color-2')
-      .removeClass('--yellow')
-      .removeClass('--white')
-      .removeClass('--black')
-      .removeClass('--red')
-    $('.js-color-pick-wrap .js-color-2')
-      .addClass('--yellow')
-      .attr('data-color', 'yellow')
-    output.numberColor = 'white'
-    output.letterColor = 'white'
-    changePrintColor('black')
-    $('.js-nike-logo').attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/nike-logo.svg')
-  }
-
-  // 更换Tee的颜色
-  $('.final-back')
-      .removeClass('--white')
-      .removeClass('--black')
-      .removeClass('--red')
-      .addClass('--' + output.color)
-  $('.final')
-      .removeClass('--white')
-      .removeClass('--black')
-      .removeClass('--red')
-      .addClass('--' + output.color)
-})
-
 // 选取尺码
 $('.js-size-pick .option-wrap').click(function () {
   output.size = $(this).attr('data-value')
@@ -262,5 +171,102 @@ $('.js-complete').click(function () {
       data: JSON.stringify(output)}
   ).success(function () {
   });
+})
+
+
+
+function changePrintColor(color) {
+  // swtich (color) {
+    printNumbers()
+    printLetters()
+  // }
+}
+
+// actions
+// 选取颜色
+$('.js-color-pick .option-wrap').click(function () {
+  output.color = $(this).attr('data-value')
+
+  $('.js-color-pick-wrap>div').removeClass('--selected')
+  $('.js-color-pick-wrap>div:first-child').addClass('--selected')
+
+  if (output.color === 'red') {
+    $('.js-color-pick-wrap .js-color-1')
+      .removeClass('--yellow')
+      .removeClass('--white')
+      .removeClass('--black')
+      .removeClass('--red')
+    $('.js-color-pick-wrap .js-color-1')
+      .addClass('--white')
+      .attr('data-color', 'white')
+    $('.js-color-pick-wrap .js-color-2')
+      .removeClass('--yellow')
+      .removeClass('--white')
+      .removeClass('--black')
+      .removeClass('--red')
+    $('.js-color-pick-wrap .js-color-2')
+      .addClass('--yellow')
+      .attr('data-color', 'yellow')
+    output.numberColor = 'white'
+    output.letterColor = 'white'
+    changePrintColor('red')
+    $('.js-nike-logo').attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/nike-logo.svg')
+  }
+  if (output.color === 'white') {
+    $('.js-color-pick-wrap .js-color-1')
+      .removeClass('--yellow')
+      .removeClass('--white')
+      .removeClass('--black')
+      .removeClass('--red')
+    $('.js-color-pick-wrap .js-color-1')
+      .addClass('--black')
+      .attr('data-color', 'black')
+    $('.js-color-pick-wrap .js-color-2')
+      .removeClass('--yellow')
+      .removeClass('--white')
+      .removeClass('--black')
+      .removeClass('--red')
+    $('.js-color-pick-wrap .js-color-2')
+      .addClass('--red')
+      .attr('data-color', 'red')
+    output.numberColor = 'black'
+    output.letterColor = 'black'
+    changePrintColor('white')
+    $('.js-nike-logo').attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/nike-logo-black.svg')
+  }
+  if (output.color === 'black') {
+    $('.js-color-pick-wrap .js-color-1')
+      .removeClass('--yellow')
+      .removeClass('--white')
+      .removeClass('--black')
+      .removeClass('--red')
+    $('.js-color-pick-wrap .js-color-1')
+      .addClass('--white')
+      .attr('data-color', 'white')
+    $('.js-color-pick-wrap .js-color-2')
+      .removeClass('--yellow')
+      .removeClass('--white')
+      .removeClass('--black')
+      .removeClass('--red')
+    $('.js-color-pick-wrap .js-color-2')
+      .addClass('--yellow')
+      .attr('data-color', 'yellow')
+    output.numberColor = 'white'
+    output.letterColor = 'white'
+    changePrintColor('black')
+    $('.js-nike-logo').attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/nike-logo.svg')
+  }
+
+  // 更换Tee的颜色
+  $('.final-back')
+      .removeClass('--white')
+      .removeClass('--black')
+      .removeClass('--red')
+      .addClass('--' + output.color)
+  $('.final')
+      .removeClass('--white')
+      .removeClass('--black')
+      .removeClass('--red')
+      .addClass('--' + output.color)
 })
 
