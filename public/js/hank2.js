@@ -90,7 +90,7 @@ function changePrintColor(color) {
 
 // actions
 // 选取颜色
-$('.js-color-pick .img-wrap').click(function () {
+$('.js-color-pick .option-wrap').click(function () {
   output.color = $(this).attr('data-value')
 
   if (output.color === 'red') {
@@ -112,7 +112,7 @@ $('.js-color-pick .img-wrap').click(function () {
       .attr('data-color', 'yellow')
     output.numberColor = 'white'
     output.letterColor = 'white'
-    changePrintColor('white')
+    changePrintColor('red')
   }
   if (output.color === 'white') {
     $('.js-color-pick-wrap .js-color-1')
@@ -128,12 +128,12 @@ $('.js-color-pick .img-wrap').click(function () {
       .removeClass('--white')
       .removeClass('--black')
       .removeClass('--red')
-    $('.js-color-pick-wrap .js-color-2').addClass('--red')
+    $('.js-color-pick-wrap .js-color-2')
       .addClass('--red')
       .attr('data-color', 'red')
     output.numberColor = 'black'
     output.letterColor = 'black'
-    changePrintColor('black')
+    changePrintColor('white')
   }
   if (output.color === 'black') {
     $('.js-color-pick-wrap .js-color-1')
@@ -154,7 +154,7 @@ $('.js-color-pick .img-wrap').click(function () {
       .attr('data-color', 'yellow')
     output.numberColor = 'white'
     output.letterColor = 'white'
-    changePrintColor('white')
+    changePrintColor('black')
   }
 
   // 更换Tee的颜色
@@ -234,8 +234,8 @@ $('#input-letter').on('input', function(event) {
   $(this).val(inputValue.match(/[A-Z]*\.*[A-Z]*/)[0].toUpperCase())
 
   // 限制长度
-  if (inputValue.length > 8) {
-    $(this).val(inputValue.slice(0, 8))
+  if (inputValue.length > 6) {
+    $(this).val(inputValue.slice(0, 6))
   }
 
   inputLetters = $(this).val()
