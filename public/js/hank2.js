@@ -22,7 +22,6 @@ setTimeout(function () {
   })
   $('.cover').append(
         '<img class="text" src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/cover-end/text.svg">'
-        + '<img class="logo" src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/cover-end/logo.svg">'
         + '<img class="moving-arrow" src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/arrow.svg">'
         )
 }, 1000)
@@ -89,18 +88,27 @@ $('.js-size-pick .option-wrap').click(function () {
 
 // 输入数字出图
 function printNumbers() {
-  var imgs = ''
+  var showImgs = ''
+  var finalImgs = ''
 
   output.number = inputNumbers
   inputNumbers.split('').forEach(function (item) {
-    imgs += '<img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/number-'
+    showImgs += '<img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/number-'
     + output.numberColor
     + '/number-'
     + item
     + '.svg">'
   })
-  $('.js-input-number-show').empty().append(imgs)
-  $('.js-final-back .number-wrap').empty().append(imgs)
+
+  inputNumbers.split('').forEach(function (item) {
+    finalImgs += '<img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/number-'
+    + (output.numberColor === 'black' ? 'solid-black' : output.numberColor)
+    + '/number-'
+    + item
+    + '.svg">'
+  })
+  $('.js-input-number-show').empty().append(showImgs)
+  $('.js-final-back .number-wrap').empty().append(finalImgs)
 }
 
 $('#input-number').on('input', function() {
@@ -125,18 +133,26 @@ $('.js-pick-number-color>div').click(function() {
 
 // 输入字母出图
 function printLetters() {
-  var imgs = ''
+  var showImgs = ''
+  var finalImgs = ''
 
   output.letter = inputLetters
   inputLetters.split('').forEach(function (item) {
-    imgs += '<img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/letter-'
+    showImgs += '<img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/letter-'
     + output.letterColor
     + '/letter-'
     + (item.charCodeAt(0) - 64)
     + '.svg">'
   })
-  $('.js-input-letter-show').empty().append(imgs)
-  $('.js-final-back .text-wrap').empty().append(imgs)
+  inputLetters.split('').forEach(function (item) {
+    finalImgs += '<img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/letter-'
+    + (output.letterColor === 'black' ? 'solid-black' : output.letterColor)
+    + '/letter-'
+    + (item.charCodeAt(0) - 64)
+    + '.svg">'
+  })
+  $('.js-input-letter-show').empty().append(showImgs)
+  $('.js-final-back .text-wrap').empty().append(finalImgs)
 }
 
 $('#input-letter').on('input', function(event) {
