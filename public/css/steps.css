@@ -229,14 +229,14 @@
   background-image: url(https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/final-red-back.png);
 }
 .text-wrap{
-  margin-top: 40px;
+  margin-top: 45px;
   display: flex;
   width: 100%;
   justify-content: center;
 }
 .text-wrap img{
   width: auto;
-  height: 45px;
+  height: 30px;
   margin: 0 2px;
 }
 .number-wrap{
@@ -248,7 +248,7 @@
 .number-wrap img{
   width: auto;
   height: 80px;
-  margin: 10px 3px;
+  margin: 15px 3px;
 }
 
 

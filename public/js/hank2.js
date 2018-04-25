@@ -146,8 +146,8 @@ $('#input-letter').on('input', function(event) {
   $(this).val(inputValue.match(/[A-Z]*\.*[A-Z]*/)[0].toUpperCase())
 
   // 限制长度
-  if (inputValue.length > 6) {
-    $(this).val(inputValue.slice(0, 6))
+  if (inputValue.length > 8) {
+    $(this).val(inputValue.slice(0, 8))
   }
 
   inputLetters = $(this).val()
