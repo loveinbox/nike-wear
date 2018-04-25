@@ -220,7 +220,7 @@ function printLetters() {
     imgs += '<img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/letter-'
     + output.letterColor
     + '/letter-'
-    + (item.charCodeAt(0) - 96)
+    + (item.charCodeAt(0) - 64)
     + '.svg">'
   })
   $('.js-input-letter-show').empty().append(imgs)
@@ -228,10 +228,10 @@ function printLetters() {
 }
 
 $('#input-letter').on('input', function(event) {
-  var inputValue = $(this).val().toLowerCase()
+  var inputValue = $(this).val().toUpperCase()
 
   // 过滤非字符和点
-  $(this).val(inputValue.match(/[a-z]*\.*[a-z]*/))
+  $(this).val(inputValue.match(/[A-Z]*\.*[A-Z]*/)[0].toUpperCase())
 
   // 限制长度
   if (inputValue.length > 8) {
