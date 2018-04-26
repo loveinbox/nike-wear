@@ -29,14 +29,14 @@ setTimeout(function () {
 setTimeout(function () {
   var domString = ''
   for (var i = 1; i < 20; i++) {
-    domString += '<div class="option-wrap" data-value="logo-' 
+    domString += '<div class="option-wrap can-pick" data-value="logo-' 
       + i 
       + '"><img src="https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/logo-with-text/logo-' 
       + i 
       + '.svg"></div>'
   }
   $('.step-3 .input-wrap').append(domString)
-  $('.step-3 .option-wrap img').click(changeSelected)
+  $('.step-3 .option-wrap').click(changeSelected)
   $('.js-logo-pick .option-wrap').click(function () {
     output.logo = $(this).attr('data-value')
     $('.js-team-logo').attr('src', 'https://chi-2018.oss-cn-hangzhou.aliyuncs.com/04-22/logo-no-text/' + output.logo + '.svg')
