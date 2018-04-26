@@ -76,14 +76,14 @@ app.all('/write', jsonParser, function(req, res, next) {
     }
     message = '\n' + new Date() + '\n' + message + '\n\n';
     console.log('message', message);
-    fs.appendFile('data.txt', message, function (err) {
+    fs.appendFile('data/data.txt', message, function (err) {
         if (err) return console.log(err);
         res.send('date received');
     });
 });
 
 app.all('/db', function(req, res, next) {
-    var dbname = 'data.txt';
+    var dbname = 'data/data.txt';
     var stat = fs.statSync(dbname);
     res.writeHeader(200, {
         "Content-Length": stat.size,

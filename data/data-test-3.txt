@@ -1,0 +1,32 @@
+
+Thu Apr 26 2018 23:20:37 GMT+0800 (CST)
+company	Test6
+name	Test 6
+mobile	6666666666666
+email	fffffffffff
+inviter	Fffffffff
+color	red
+size	S
+number	66
+numberColor	yellow
+letter	FFFFFFFF
+letterColor	white
+logo	logo-19
+
+
+
+Thu Apr 26 2018 23:23:39 GMT+0800 (CST)
+company	Test 7
+name	Test 7
+mobile	77777777
+email	ggggggg
+inviter	Gggggg
+color	red
+size	L
+number	77
+numberColor	white
+letter	GGGGGGGG
+letterColor	yellow
+logo	logo-15
+
+

@@ -192,9 +192,9 @@ $('.js-complete').click(function () {
 })
 
 var store = {
-  red: ['L','M','S','XL','XLL'],
-  white: ['L','M','S','XL','XLL'],
-  black: ['L','M','S','XL','XLL']
+  red: ['S','M','L','XL','XLL'],
+  white: ['S','M','L','XL','XLL'],
+  black: ['S','M','L','XL','XLL']
 }
 
 setSizeStatue('red')
@@ -212,6 +212,7 @@ function setSizeStatue(color) {
       $(this).addClass('can-pick')
       if (isTheFirst) {
         $(this).addClass('can-pick --selected')
+        output.size = $(this).attr('data-value')
         isTheFirst = false
       }
     } else {

@@ -270,3 +270,83 @@ letterColor	yellow
 logo	
 
 
+
+Wed Apr 25 2018 23:45:07 GMT+0800 (CST)
+company	
+name	
+mobile	
+email	
+inviter	
+color	red
+size	L
+number	
+numberColor	yellow
+letter	
+letterColor	yellow
+logo	
+
+
+
+Thu Apr 26 2018 10:10:59 GMT+0800 (CST)
+company	
+name	
+mobile	
+email	
+inviter	
+color	black
+size	XLL
+number	
+numberColor	white
+letter	DDSSSS
+letterColor	white
+logo	logo-4
+
+
+
+Thu Apr 26 2018 11:48:43 GMT+0800 (CST)
+company	看看
+name	KKK咯KKK
+mobile	66666
+email	bhgg@ggv.com
+inviter	途径
+color	white
+size	XL
+number	55
+numberColor	black
+letter	MICHAEL
+letterColor	black
+logo	logo-13
+
+
+
+Thu Apr 26 2018 11:49:20 GMT+0800 (CST)
+company	
+name	
+mobile	
+email	
+inviter	
+color	black
+size	XLL
+number	77
+numberColor	white
+letter	YESYESYE
+letterColor	white
+logo	logo-7
+
+
+
+Thu Apr 26 2018 11:51:25 GMT+0800 (CST)
+company	
+name	
+mobile	
+email	
+inviter	
+color	red
+size	L
+number	
+numberColor	yellow
+letter	
+letterColor	yellow
+logo	
+
+
