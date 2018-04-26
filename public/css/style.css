@@ -122,3 +122,7 @@ input{
   margin: 0 auto;
 }
 
+.not-can-pick{
+  opacity: 0.3;
+}
+

@@ -75,8 +75,10 @@ $('.js-reset').click(function (){
 })
 
 function changeSelected() {
-  $(this).parents('section').find('.--selected').removeClass('--selected')
-  $(this).closest('.option-wrap').addClass('--selected')
+  if ($(this).hasClass('can-pick')){
+    $(this).parents('section').find('.--selected').removeClass('--selected')
+    $(this).closest('.option-wrap.can-pick').addClass('--selected')
+  }
 }
 
 $('.option-wrap').click(changeSelected)
@@ -189,12 +191,40 @@ $('.js-complete').click(function () {
   });
 })
 
+var store = {
+  red: [ 'L', 'XLL'],
+  white: [ 'L','M' ,'S' ,'XL' ,'XLL'],
+  black: [ 'L','M' ,'XL' ,'XLL']
+}
 
+setSizeStatue('red')
+
+function setSizeStatue(color) {
+  var isTheFirst = true
+
+  $('.js-size-pick .option-wrap').each(function (item, index) {
+    $(this).removeClass('can-pick')
+      .removeClass('not-can-pick')
+      .removeClass('--selected')
+    var canPick = store[color].indexOf($(this).attr('data-value')) > -1
+
+    if (canPick) {
+      $(this).addClass('can-pick')
+      if (isTheFirst) {
+        $(this).addClass('can-pick --selected')
+        isTheFirst = false
+      }
+    } else {
+      $(this).addClass('not-can-pick')
+    }
+  })
+}
 
 function changePrintColor(color) {
   // swtich (color) {
     printNumbers()
     printLetters()
+    setSizeStatue(color)
   // }
 }
 
