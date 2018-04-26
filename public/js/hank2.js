@@ -192,9 +192,9 @@ $('.js-complete').click(function () {
 })
 
 var store = {
-  red: [ 'L', 'XLL'],
-  white: [ 'L','M' ,'S' ,'XL' ,'XLL'],
-  black: [ 'L','M' ,'XL' ,'XLL']
+  red: ['L','M','S','XL','XLL'],
+  white: ['L','M','S','XL','XLL'],
+  black: ['L','M','S','XL','XLL']
 }
 
 setSizeStatue('red')
