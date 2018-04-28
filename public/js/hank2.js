@@ -10,7 +10,7 @@ var output = {
   numberColor: 'yellow',
   letter: '',
   letterColor: 'yellow',
-  logo: ''
+  logo: 'logo-0'
 }
 
 var inputNumbers = ''
